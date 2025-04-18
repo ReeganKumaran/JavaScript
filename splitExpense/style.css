@@ -1,0 +1,10 @@
+.hide {
+    visibility: hidden;
+    /* display: hide; */
+}
+.navi{
+    text-align: center !important;
+    background-color: black;
+    color: white;
+    font-size: 35px;
+}

@@ -1,0 +1,34 @@
+const findLength = (n) => {
+    let number = n;
+    let count = 0;
+    while (number) {
+        count++;
+        number = number / 10 | 0
+    }
+    return count
+}
+const findPower = (n, p) => {
+    let number = n;
+    let sum = 1;
+    if(n == 0) return 0 
+    // console.log(n,p)
+    for (let i = 1; i <= p; i++) {
+        sum *= number;
+    }
+    return sum
+}
+// console.log(findLength(1010))
+// console.log(findPower((2)*1,3))
+const binaryToDecimal = (n) => {
+    let number = n;
+    let sum = 0;
+    let length = findLength(number);
+    for (let i = 0; i < length; i++) {
+        sum += findPower((number%10)*2, i)
+        // console.log(findPower((number%10)*2, i))
+        number = Math.trunc(number/10)
+        // console.log(sum)
+    }
+    return sum
+}
+console.log(binaryToDecimal(1000000))

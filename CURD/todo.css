@@ -1,0 +1,25 @@
+.container {
+    background-color: #343434;
+}
+
+.row {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* height:; */
+}
+
+.input-div {
+    position: relative;
+}
+
+.add-btn {
+    position: absolute;
+    top: 0px;
+    left: 140px;
+}
+
+.col {
+    display: flex;
+    width: 5%;
+}

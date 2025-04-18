@@ -1,0 +1,53 @@
+.input{
+    display: block;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+input{    
+    margin-top: 5px;
+    /* margin: 10px; */
+    width: 90%;
+    padding: 7px;
+    /* border-radius: 10px; */
+    /* border: none ; */
+    /* width: 15vw; */
+}
+label{
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    /* background-color: rgb(241, 241, 70); */
+}
+body{
+    background-color: hsl(0, 0%, 84%);
+}
+#calculate{
+    margin-top: 20px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 95%;
+}
+.sameLine{
+    display: flex;
+}
+#price{
+    font-size: 30px ;
+}
